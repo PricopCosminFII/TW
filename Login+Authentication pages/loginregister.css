@@ -7,7 +7,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 body{
-  background-image: url("https://img3.goodfon.com/wallpaper/nbig/e/98/android-geometriya-linii-siniy.jpg");
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://www.wallpapertip.com/wmimgs/216-2160216_geometric-desktop-background-hd-wallpapers-and-backgrounds.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -29,7 +29,7 @@ body{
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 25px;
-  background: -webkit-linear-gradient(rgb(138, 136, 136), rgb(8, 7, 7));
+  background: -webkit-linear-gradient(rgba(113, 177, 230, 0.753), rgb(19, 90, 131));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
