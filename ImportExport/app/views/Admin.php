@@ -34,9 +34,14 @@
             </form>
 
             <h3>
-                Download database info:
+                Download HTML database info:
             </h3>
-            <a href = "app\controllers\download.php" > Download </a>
+            <a href = "app\controllers\downloadhtml.php" > Download </a>
+            <br>
+            <h3>
+                Download CSS database info:
+            </h3>
+            <a href = "app\controllers\downloadcss.php" > Download </a>
         </article>
     </main>
 

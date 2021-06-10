@@ -3,7 +3,7 @@
 $connection = mysqli_connect("localhost", "root", "Varsator123B", "lehs") or die("Error " . mysqli_error($connection));
 
 //fetch table rows from mysql db
-$sql = "select * from questions";
+$sql = "select * from questionscss";
 $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
 
 //create an array
