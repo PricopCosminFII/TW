@@ -19,7 +19,7 @@
             <ul>
                 <li typeof="sa:ContributorRole" property="schema:author">
                     <span typeof="schema:Person">
-              <meta property="schema:givenName" content="Valentin">
+              <meta property="schema:givenName" content="Valentin-Constantin">
               <meta property="schema:familyName" content="Bălțătescu">
               <span property="schema:name">Valentin Bălțătescu</span>
                     </span>
@@ -103,7 +103,7 @@
             <h3>2.3 Mediul de operare</h3>
             Aplicația este accesibilă pentru orice dispozitiv ce are la dispoziție un browser web și o conexiune de internet stabilă.
             <h3>2.4 Constrângeri de proiectare și implementare</h3>
-            <p>Pentru utilizatorii ce accesează aplicația de pe tabletă sau telefon exercițiile vor fi de tip grilă și nu de tip scriere cod.
+            <p>Pentru utilizatorii ce accesează aplicația de pe tabletă/telefon/PC exercițiile vor fi de tip grilă.
             </p>
             <h3>2.5 Documentația utilizatorului</h3>
             <p>Prima pagină accesată de utilizator este pagina de Home unde va avea de ales între a se loga și a-și crea un cont.După ce utilizatorul se loghează utilizatorul va fi redirecționat către pagina de Home unde va avea acces la bara de navigare
@@ -134,6 +134,7 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Java Script</li>
+                <li>PHP</li>
             </ul>
             <h3>3.3 Caracteristici ale sistemului </h3>
             <ol>
@@ -162,8 +163,8 @@
                 <p>Facilitățile oferite de către bară de navigare. În cadrul acestor pagini utilizatorului i se va ofiri mai întâi o scurtă lecție în care sunt explicați noi termeni din domeniului de front-end după care acesta își va putea exersa cele învățate
                     cu ajutorul unor exerciții. Aceste exerciții diferă pentru varianta de PC cu cea de telefon/tabletă. Pentru PC utilizatorul va putea să scrie cod care va putea fi compilat și să vadă live rezultatele celor scrise de el, iar cu ajutorul
                     unui buton de "submit" acesta va află dacă ceea ce a făcut este corect și dacă va putea trece la lecția următoare. Pentru telefon/tabletă exercițiile constau din niște întrebări de tip grilă tot pe baza aceluiaș material care este
-                    și pe varianta de PC la lecție, la fel că și pe cealaltă platforma trecerea la o altă lecție este posibilă după ce rezolva corect exercițiile. Pentru a trece la celelalte nivele următoare/precedente vor fi 2 butoane în josul paginii
-                    de "Previous" și "Next".</p>
+                    și pe varianta de PC la lecție, la fel că și pe cealaltă platforma trecerea la o altă lecție este posibilă după ce rezolva corect exercițiile. Pentru a trece la celelalte nivele următoare se va folosi un buton de "submit" care va încarcă 
+                    conținutul pentru următoarea lecție în pagină.</p>
                 <li>
                     <h4>Pagina: Leaderboard </h4>
                 </li>
@@ -189,13 +190,24 @@
                     vrea să se conecteze cu profilul sau de github atunci acesta va avea această posibilitate cu ajutorul unui buton "Register with GitHub" după care va fi redirecționat la pagină principala pentru utilizatori logați.Acești utilizatori
                     vor fi memorati într-o baza de date unde vor fi stocate informațiile despre utlizatori.</p>
             </ol>
+        
+        </section>
+        <section typeof="sa:MaterialsAndMethods">
+            <h2>4.Descriere Backend</h2>
+            <p>
+                Aplicația funcționează pe pattern-ul arhitectural al Model-View-Controller (MVC) pentru funcționalitatea din spate a acesteia. Această se bazează pe separarea aplicației în 3 mari părți: Model, View, Controller cu scopul de a separă logică de interfață fiecare având un rol specific. View-ul reprezintă ceea ce va vedea utilizatorul în timpul folosirii aplicației,adică prezentarea datelor prelucrate. Modelul se ocupă cu stocarea datelor și care se ocupă de logică din spate a aplicației, iar Controller-ul este util pentru interacțiunea cu utilizatorul, astfel el dându-și seama în funcție de input-urile de la el cărei părți din Model să se ocupe și după care să afișeze datele prelucrate prin interfață. 
+            </p>
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/1200px-MVC-Process.svg.png" alt = "MVC" style="width: 65%; height: 400px;">
+            <p>
+                În cadrul aplicației noastre există View pentru fiecare dintre funcționalitățile aplicației: home,login,profile etc. În partea de Model și Core se află logică aplicației, în special partea responsabilă de autentificare, logare, informații despre user și gestiunea bazei de date pentru utilizatori, întrebări și răspunsuri. Iar pe partea de Controller pe lângă cele care fac legătură cu View-urile mai sunt câteva pentru lucrul cu bazele de date și gestiunea administratorului.
+            </p>
         </section>
         <section typeof="sa:MaterialsAndMethods">
             <h2>
                 Repartizarea sarcinilor
             </h2>
             <h3>
-                Bălțătescu Valentin :
+                Bălțătescu Valentin-Constantin :
             </h3>
             <ul>
                 <li>
@@ -209,6 +221,12 @@
                 </li>
                 <li>
                     Legături pagini ;
+                </li>
+                <li>
+                    Structurare MVC ;
+                </li>
+                <li>
+                    Realizare functionalitate backend ;
                 </li>
                 <li>
                     Raport .
@@ -229,6 +247,12 @@
                     Legături pagini ;
                 </li>
                 <li>
+                    Structurare MVC ;
+                </li>
+                <li>
+                    Realizare functionalitate backend ;
+                </li>
+                <li>
                     Raport .
                 </li>
             </ul>
@@ -245,6 +269,12 @@
                 </li>
                 <li>
                     Legături pagini ;
+                </li>
+                <li>
+                    Structurare MVC ;
+                </li>
+                <li>
+                    Realizare functionalitate backend ;
                 </li>
                 <li>
                     Raport .
@@ -267,6 +297,18 @@
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/">Ajutor la toate</a>
+                </li>
+                <li>
+                    <a href="https://www.php.net/manual/ro/index.php">PHP Manual</a>
+                </li>
+                <li>
+                    <a href="https://www.guru99.com/php-mvc-frameworks.html">MVC Framework</a>
+                </li>
+                <li>
+                    <a href="https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps">GitHub OAuth</a>
+                </li>
+                <li>
+                    <a href="https://iampava.com/">Sensei's documentation</a>
                 </li>
             </ul>
         </section>
