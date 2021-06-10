@@ -34,38 +34,21 @@
         </div>
         <span class="menu__button" onclick="openNav()">&#9776; Menu</span>
     </header>
-
+    <script>
+        var xhttp;
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("container").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "topusers/top", true);
+        xhttp.send();
+    </script>
     <main class="main__for-article">
         <article class="profile__article-content">
             <div id="container">
-                <h3>Leaderboard</h3>
-                <ol>
-                    <li>
-                        <div class="name">Player1</div>
-                        <div class="score">430</div>
-                    </li>
-                    <li>
-                        <div class="name">Player2</div>
-                        <div class="score">321</div>
-                    </li>
-                    <li>
-                        <div class="name">Player3</div>
-                        <div class="score">261</div>
-                    </li>
-                    <li>
-                        <div class="name">Player4</div>
-                        <div class="score">231</div>
-                    </li>
-                    <li>
-                        <div class="name">Player5</div>
-                        <div class="score">175</div>
-                    </li>
-                    <li>
-                        <div class="name">Player6</div>
-                        <div class="score">88</div>
-                    </li>
 
-                </ol>
             </div>
         </article>
     </main>

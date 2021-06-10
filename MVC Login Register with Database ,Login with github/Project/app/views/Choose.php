@@ -7,6 +7,7 @@
 </head>
 
 <body class="body__background">
+
     <header>
         <nav class="nav__bar">
             <img src="public/Photos/logoo.png" alt="logo" class="logo">
@@ -30,6 +31,7 @@
         </div>
         <span class="menu__button" onclick="openNav()">&#9776; Menu</span>
     </header>
+   
 
     <main class="main__for-article">
         <article class="article-content">
@@ -37,7 +39,7 @@
                 Our courses
             </h3>
             <section class="section__choose">
-                <p>
+                <p id='1'>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                     survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
                     with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -51,20 +53,15 @@
             <br>
             <section class="section__choose">
                 <div class="dropdown">
-                    <button class="dropdown-button"><img src = "public/Photos/html.png" class = "image-dropdown"> HTML</button>
-                    <div class="dropdown-list">
-                        <a href="easy2">Easy</a>
-                        <a href="easy2">Intermediate</a>
-                        <a href="easy3">Hard</a>
-                    </div>
+                    <form action="HTML">
+
+                        <button class="dropdown-button" type="submit"><img src="public/Photos/html.png" class="image-dropdown"> HTML</button>
+                    </form>
                 </div>
                 <div class="dropdown">
-                    <button class="dropdown-button"><img src = "public/Photos/css.png" class = "image-dropdown">CSS</button>
-                    <div class="dropdown-list">
-                        <a href="easy1">Easy</a>
-                        <a href="easy2">Intermediate</a>
-                        <a href="easy3">Hard</a>
-                    </div>
+                    <form action="CSS">
+                        <button class="dropdown-button" type="submit"><img src="public/Photos/css.png" class="image-dropdown">CSS</button>
+                    </form>
                 </div>
             </section>
             <br>

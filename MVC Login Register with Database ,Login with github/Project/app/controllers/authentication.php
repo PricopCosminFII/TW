@@ -1,6 +1,5 @@
 <?php
 include_once __DIR__ . "/../models/aboutuser.php";
-include_once __DIR__ . "/../models/user.php";
 class Authentication extends Controller
 {public function __construct() {
     $this->userModel = $this->model('aboutuser');

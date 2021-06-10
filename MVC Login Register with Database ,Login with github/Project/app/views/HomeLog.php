@@ -45,7 +45,7 @@
 
             </p>
 
-            <a href="views/Choose.php" class="hero-btn">See our courses</a>
+            <a href="choose" class="hero-btn">See our courses</a>
         </div>
 
     </section>

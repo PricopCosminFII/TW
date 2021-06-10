@@ -35,7 +35,9 @@ body{
   text-transform: uppercase;
   text-align: center;
 }
-
+.inputfield .error{
+  color:rgb(184, 63, 63);
+}
 .wrapper .form{
   width: 100%;
   display: flex;

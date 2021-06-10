@@ -50,27 +50,17 @@
                 </div>
             </section>
             <section class="stats">
-                <h2 class="stats__title">Stats</h2>
+                <h2 class="stats__title">Status HTML</h2>
                 <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
+                    <p class="stats__text" id='progresHTML'>TBD</p>
+                    <p id='placeHTML'>TBD</p>
                 </div>
+                <h2 class="stats__title">Status CSS</h2>
                 <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
+                    <p class="stats__text" id='progresCSS'>TBD</p>
+                    <p  id='placeCSS'>TBD</p>
                 </div>
-                <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
-                </div>
-                <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
-                </div>
-                <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
-                </div>
+               
 
             </section>
         </article>

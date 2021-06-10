@@ -1,5 +1,5 @@
 <?php
-
+include_once __DIR__ . "/../models/aboutuser.php";
 class Oauth
 {
     public function __construct()
