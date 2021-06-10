@@ -14,6 +14,6 @@ Inspiratie: [Flexbox Froggy](https://flexboxfroggy.com/) & [CSS Grid Garden](htt
 
 # Utilizare aplicație
 
-În primul rând pentru a face aplicația să ruleze local este nevoie de [Xampp](https://www.apachefriends.org/ro/index.html) care să fie instalat de preferat în driver-ul 'C' al computer-ului.  După care se clonează [repo-ul](https://github.com/PricopCosminFII/TW.git) și se ia folder-ul Project care va fi pus în directorul 'C:\xampp\htdocs'. După care se vor face setările pentru server-ul Apache și MySQL: se deschide Xampp Control Panel, după care se accesează Apache->Config->Apache(httpd.conf) și se schimbă Listen-ul să fie Listen 12.34.56.78:3000 și Listen 3000. Următorul pas este Apache->ConfigphpMyAdmin(config.inc.php) și se modifică astfel: ![image]https://i.gyazo.com/303fffdefebb343b2e8f7eb69a982de4.png
+În primul rând pentru a face aplicația să ruleze local este nevoie de [Xampp](https://www.apachefriends.org/ro/index.html) care să fie instalat de preferat în driver-ul 'C' al computer-ului.  După care se clonează [repo-ul](https://github.com/PricopCosminFII/TW.git) și se ia folder-ul Project care va fi pus în directorul 'C:\xampp\htdocs'. După care se vor face setările pentru server-ul Apache și MySQL: se deschide Xampp Control Panel, după care se accesează Apache->Config->Apache(httpd.conf) și se schimbă Listen-ul să fie Listen 12.34.56.78:3000 și Listen 3000. Următorul pas este Apache->ConfigphpMyAdmin(config.inc.php) și se modifică astfel:![image]https://i.gyazo.com/303fffdefebb343b2e8f7eb69a982de4.png
 
 
