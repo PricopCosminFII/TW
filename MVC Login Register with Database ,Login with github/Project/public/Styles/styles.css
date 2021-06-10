@@ -333,7 +333,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
-    width: 100%;
+    width: 50%;
     margin: 0;
     padding: 0;
 }
@@ -360,6 +360,7 @@ input[type="submit"] {
 .option__quiz {
     padding: 5px;
     font-size: 1.2rem;
+    
 }
 
 .answer {
@@ -372,6 +373,15 @@ input[type="submit"] {
     border-radius: 10px;
     height: 30px;
     width: 100px;
+    font-size: 1.2rem;
+}
+
+.download__button {
+    background-color: #555;
+    color: #fff;
+    border-radius: 50px;
+    height: 45px;
+    width: 185px;
     font-size: 1.2rem;
 }
 
@@ -469,11 +479,18 @@ ol.ladderboard {
     list-style-position: outside;
 }
 
+.article-content {
+    margin-top: 5%;
+    font-size: 1.2rem;
+    background: rgb(252, 252, 252);
+    color: #000;
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
 @media screen and (min-width: 1025px) {
     .menu__button {
-        display: none;
-    }
-    .quiz {
         display: none;
     }
     .menu__phone {
@@ -490,15 +507,6 @@ ol.ladderboard {
     }
     .row {
         margin-top: 40px;
-    }
-    .article-content {
-        margin-top: 5%;
-        font-size: 1.2rem;
-        background: rgb(252, 252, 252);
-        color: #000;
-        overflow-wrap: break-word;
-        border-radius: 8px;
-        padding: 1rem;
     }
     .section__choose {
         display: flex;
@@ -538,9 +546,6 @@ ol.ladderboard {
         padding: 3rem;
         display: relative;
         flex-direction: column;
-    }
-    .code {
-        display: none;
     }
     .nav__bar {
         display: none;

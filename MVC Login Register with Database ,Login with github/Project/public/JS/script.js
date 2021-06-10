@@ -8,19 +8,13 @@ function displayAnswer1() {
         document.getElementById('block-12').style.border = '3px solid red'
         document.getElementById('result-12').style.color = 'red'
         document.getElementById('result-12').innerHTML = 'Incorrect!'
-        showCorrectAnswer1()
+
     }
     if (document.getElementById('option-13').checked) {
         document.getElementById('block-13').style.border = '3px solid red'
         document.getElementById('result-13').style.color = 'red'
         document.getElementById('result-13').innerHTML = 'Incorrect!'
-        showCorrectAnswer1()
-    }
-    if (document.getElementById('option-14').checked) {
-        document.getElementById('block-14').style.border = '3px solid red'
-        document.getElementById('result-14').style.color = 'red'
-        document.getElementById('result-14').innerHTML = 'Incorrect!'
-        showCorrectAnswer1()
+
     }
 }
 

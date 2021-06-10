@@ -38,7 +38,7 @@
                 
             </div>
             <div class="inputfield">
-            <p id="error"></p>
+            <p id="error" class="error" style="color:rgb(184, 63, 63);"></p>
                 
             </div>
            

@@ -46,13 +46,25 @@ class Callback
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept: application/json', $authHeader, $userAgentHeader));
                 $response = curl_exec($ch);
                 curl_close($ch);
-                $gender="Unknown";
+                $gender=" ";
                 $info = json_decode($response);
                 $_SESSION['username'] = $info->login;
+                
                 $_SESSION['gender']=$gender;
                 $_SESSION['firstname'] = 'Logged with ';
                 $_SESSION['lastname'] =' ';
                 $_SESSION['image']='public/Photos/GitHub-logo.png';
+                $user=new Aboutuser();
+                if(!$user->findUserByUsername($_SESSION['username']))
+                {
+                    $date['username']=$_SESSION['username'];
+                    $date['email']=" ";
+                    $date['password']=$_SESSION['token'];
+                    $date['firstname']=" ";
+                    $date['lastname']=" ";
+                    $date['gender']=" ";
+                    $user->register($date);
+                }
                header('location:' . 'http://localhost:3000/Project/homelog');
             }
         }
