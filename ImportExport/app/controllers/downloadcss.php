@@ -12,7 +12,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     $emparray[] = $row;
 }
 //write to json file
-    $fp = fopen('C:\Users\prico\Desktop\Project\database.json', 'w');
+    $fp = fopen('database.json', 'w');
     fwrite($fp, json_encode($emparray));
     fclose($fp);
 
@@ -35,5 +35,5 @@ function df($urlFile)
     readfile($file_name);
 }
 
-$urlPdf = 'C:\Users\prico\Desktop\Project\database.json';
+$urlPdf = 'database.json';
 df($urlPdf);

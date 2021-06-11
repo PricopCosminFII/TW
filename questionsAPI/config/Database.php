@@ -3,7 +3,7 @@ class Database{
 	
 	private $host  = 'localhost';
     private $user  = 'root';
-    private $password   = "JAVA";
+    private $password   = "parola_ta";
     private $database  = "lehs"; 
     
     public function getConnection(){		
