@@ -1,17 +1,2 @@
-id,answear,question,subject
-1,"cat e 2x2?",4,test
-1,"cat e 2x3?",6,test1
-1,"cat e 2x4?",8,test2
-1,"cat e 2x5?",10,test3
-0,answear,question,subject
-1,"cat e 2x2?",4,test
-2,"cat e 2x3?",6,test1
-3,"cat e 2x4?",8,test2
-4,"cat e 2x5?",10,test3
-0,answear,question,subject
-1,"cat e 2x2?",4,test
-2,"cat e 2x3?",6,test1
-3,"cat e 2x4?",8,test2
-4,"cat e 2x5?",10,test3
-4,"cat e 2x6?",12,test3
-5,16,"cat e 2x8",test5
+answear,lecture,option1,option2,option3,question
+option2,https://www.youtube.com/embed/--14w5SOEUs,bine,rau,"foarte rau","ce nu faci?"

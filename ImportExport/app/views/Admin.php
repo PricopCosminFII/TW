@@ -9,7 +9,16 @@
 </head>
 
 <body class="body__background">
-    <header style="padding-bottom: 10rem;"></header>
+    <header>
+    <nav class="nav__bar">
+            <img src="public/Photos/logoo.png" alt="logo" class="logo">
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="logout">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main class="main__for-article">
         <article class="article-content">
             <h3>

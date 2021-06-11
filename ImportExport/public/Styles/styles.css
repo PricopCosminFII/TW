@@ -378,9 +378,9 @@ input[type="submit"] {
 .download__button {
     background-color: #555;
     color: #fff;
-    border-radius: 5%;
-    height: 55px;
-    width: 205px;
+    border-radius: 50px;
+    height: 45px;
+    width: 185px;
     font-size: 1.2rem;
 }
 
@@ -498,9 +498,21 @@ ol.ladderboard {
     .sidenav {
         display: none;
     }
+    .frame {
+        width: 70%;
+        height: 500px;
+        margin-left: 15%;
+        margin-right: 15%;
+        align-self: center;
+    }
 }
 
 @media screen and (max-width: 1024px) {
+    .frame {
+        width: 100%;
+        height: 350px;
+        align-self: center;
+    }
     .logo {
         display: none;
     }

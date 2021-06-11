@@ -1,6 +1,5 @@
 <?php
 include_once __DIR__ . "/../models/aboutuser.php";
-include_once __DIR__ . "/../models/user.php";
 class Authentication extends Controller
 {public function __construct() {
     $this->userModel = $this->model('aboutuser');
@@ -33,7 +32,7 @@ class Authentication extends Controller
         if ($this->userModel->register($data)) {
             //Redirect to the login page
             header("Location: http://localhost:3000/Project/login");
-
+          
         } else {
             die('Something went wrong.');
         }

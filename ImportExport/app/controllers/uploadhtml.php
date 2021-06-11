@@ -56,11 +56,13 @@ if (isset($_POST['submit'])) {
     $file = fopen($pathCSV, "r");
 
     $connection = mysqli_connect("localhost", "root", "Varsator123B", "lehs") or die("Error " . mysqli_error($connection));
-
+    $count = 0;
     while($data = fgetcsv($file, $lineLength = 0, $delimiter = ",")) {
+      $count++;
+      if ($count == 1) { continue; }
         
-        $sql = "insert ignore into questions values ('".$data[0]."', '".$data[1]."', '".$data[2]."', '".$data[3]."')";
-        $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
+      $sql = "insert ignore into questionshtml values ('".$data[0]."', '".$data[1]."', '".$data[2]."', '".$data[3]."', '".$data[4]."', '".$data[5]."')";
+      $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
      }
   }
   

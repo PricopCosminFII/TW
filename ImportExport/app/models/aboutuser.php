@@ -1,5 +1,4 @@
 <?php
-include_once __DIR__ . "/user.php";
 include_once __DIR__ . "/../core/Database.php";
 session_start();
 
@@ -49,6 +48,42 @@ class Aboutuser
         return intval($row->CSSprogres);
         
     }
+    public function getquestionsCSS(){
+        $this->db->query('SELECT * FROM questionsCSS ');
+        
+        $this->db->execute();
+       $row=$this->db->resultSet();
+       return $row;
+        
+    }
+    public function globalplaceCSS(){
+        $this->db->query ('SELECT (ROW_NUMBER() OVER ( ORDER BY CSSprogres DESC )) place , username    FROM users  ' );
+        $this->db->execute();
+        $rows=$this->db->resultSet();
+        foreach($rows as $row){
+            if($row->username==$_SESSION['username'])
+            return $row->place;
+        }
+
+    }
+    public function globalplaceHTML(){
+        $this->db->query ('SELECT (ROW_NUMBER() OVER ( ORDER BY HTMLprogres DESC )) place , username    FROM users  ' );
+        $this->db->execute();
+        $rows=$this->db->resultSet();
+        foreach($rows as $row){
+            if($row->username==$_SESSION['username'])
+            return $row->place;
+        }
+
+    }
+    public function getquestionsHTML(){
+        $this->db->query('SELECT * FROM questionsHTML ');
+        
+        $this->db->execute();
+       $row=$this->db->resultSet();
+       return $row;
+        
+    }
     public function getprogresHTML(){
         $this->db->query('SELECT * FROM users WHERE username = :username');
         $this->db->bind(':username', $_SESSION['username']);
@@ -74,6 +109,20 @@ class Aboutuser
        else
        return false;
     }
+    public function topHTML(){
+        $this->db->query('SELECT * FROM users ORDER BY HTMLprogres DESC');
+       
+        $result=$this->db->resultSet();
+        return $result;
+        
+    }
+    public function topCSS(){
+        $this->db->query('SELECT * FROM users ORDER BY CSSprogres DESC');
+       
+        $result=$this->db->resultSet();
+        return $result;
+        
+    }
     public function findUserByUsername($username)
     {
 
@@ -84,7 +133,7 @@ class Aboutuser
         $this->db->execute();
 
         if ($this->db->rowCount() > 0) {
-            return true;
+            return $this->db->single();
         } else {
             return false;
         }

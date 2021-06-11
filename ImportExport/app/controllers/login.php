@@ -1,6 +1,5 @@
 <?php
 include_once __DIR__ . "/../models/aboutuser.php";
-include_once __DIR__ . "/../models/user.php";
 
 class Login extends Controller
 {

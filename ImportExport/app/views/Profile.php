@@ -19,7 +19,7 @@
                     <li><a href="choose">Levels</a></li>
                     <li><a href="profile">Profile</a></li>
                     <li><a href="top">Leaderboard</a></li>
-                    <li><a href="home">Log Out</a></li>
+                    <li><a href="logout">Log Out</a></li>
                 </ul>
             </div>
         </nav>
@@ -29,7 +29,7 @@
             <a href="choose">Levels</a>
             <a href="profile">Profile</a>
             <a href="top">Leaderboard</a>
-            <a href="home">Log Out</a>
+            <a href="logout">Log Out</a>
         </div>
         <span class="menu__button" onclick="openNav()">&#9776; Menu</span>
     </header>
@@ -50,27 +50,17 @@
                 </div>
             </section>
             <section class="stats">
-                <h2 class="stats__title">Stats</h2>
+                <h2 class="stats__title">Status HTML</h2>
                 <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
+                    <p class="stats__text" id='progresHTML'>TBD</p>
+                    <p id='placeHTML'>TBD</p>
                 </div>
+                <h2 class="stats__title">Status CSS</h2>
                 <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
+                    <p class="stats__text" id='progresCSS'>TBD</p>
+                    <p  id='placeCSS'>TBD</p>
                 </div>
-                <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
-                </div>
-                <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
-                </div>
-                <div class="stats__show">
-                    <p class="stats__text">TBD</p>
-                    <p>TBD</p>
-                </div>
+               
 
             </section>
         </article>
