@@ -12,9 +12,10 @@ public function insertlecture(){
    echo ' <iframe width="500" height="250" src="'.strval($questions[$_SESSION['idHTML']]->lecture).'"> 
         </iframe>';
         else
-    echo ' <iframe width="500" height="250" src="'.'about:blank'.'"> 
-    </iframe>';
+        {  echo ' <iframe width="500" height="250" src="'.'https://www.youtube.com/embed/crC4WGXEVgA'.'"> 
+            </iframe>';}
 }
+
 
 
 }
