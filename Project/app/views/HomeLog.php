@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Learn HTML/CSS </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public/Styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,24 +18,24 @@
 <body>
     <section class="header">
         <nav class="nav__bar">
-            <img src="./assets/logoo.png" alt="logo" class="logo">
+            <img src="public/Photos/logoo.png" alt="logo" class="logo">
             <div class="nav-links" id="navLinks">
                 <ul>
-                    <li><a href="./HomeLog.html">Home</a></li>
-                    <li><a href="./Choose.html">Levels</a></li>
-                    <li><a href="./Profile.html">Profile</a></li>
-                    <li><a href="./Top.html">Leaderboard</a></li>
-                    <li><a href="./Home.html">Log Out</a></li>
+                    <li><a href="homelog">Home</a></li>
+                    <li><a href="choose">Levels</a></li>
+                    <li><a href="profile">Profile</a></li>
+                    <li><a href="top">Leaderboard</a></li>
+                    <li><a href="logout">Log Out</a></li>
                 </ul>
             </div>
         </nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="./HomeLog.html">Home</a>
-            <a href="./Choose.html">Levels</a>
-            <a href="./Profile.html">Profile</a>
-            <a href="./Top.html">Leaderboard</a>
-            <a href="./Home.html">Log Out</a>
+            <a href="homelog">Home</a>
+            <a href="choose">Levels</a>
+            <a href="profile">Profile</a>
+            <a href="top">Leaderboard</a>
+            <a href="logout">Log Out</a>
         </div>
         <span class="menu__button" onclick="openNav()">&#9776; Menu</span>
 
@@ -45,7 +45,7 @@
 
             </p>
 
-            <a href="./Choose.html" class="hero-btn">See our courses</a>
+            <a href="choose" class="hero-btn">See our courses</a>
         </div>
 
     </section>
@@ -78,7 +78,7 @@
     </section>
 
 
-    <script src="./script.js"></script>
+    <script src="public/JS/script.js"></script>
 
 </body>
 
