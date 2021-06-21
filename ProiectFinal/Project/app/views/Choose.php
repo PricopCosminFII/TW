@@ -1,3 +1,8 @@
+<?php
+    include 'app/config/lang.php';
+
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,25 +14,25 @@
 <body class="body__background">
 
     <header>
-        <nav class="nav__bar">
+    <nav class="nav__bar">
             <img src="public/Photos/logoo.png" alt="logo" class="logo">
             <div class="nav-links" id="navLinks">
                 <ul>
-                    <li><a href="homelog">Home</a></li>
-                    <li><a href="choose">Levels</a></li>
-                    <li><a href="profile">Profile</a></li>
-                    <li><a href="top">Leaderboard</a></li>
-                    <li><a href="home">Log Out</a></li>
+                    <li><a href="homelog?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['home'] ?></a></li>
+                    <li><a href="choose?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['levels'] ?></a></li>
+                    <li><a href="profile?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['profile'] ?></a></li>
+                    <li><a href="top?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['top'] ?></a></li>
+                    <li><a href="logout?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['logout'] ?> </a></li>
                 </ul>
             </div>
         </nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="homelog">Home</a>
-            <a href="choose">Levels</a>
-            <a href="profile">Profile</a>
-            <a href="top">Leaderboard</a>
-            <a href="home">Log Out</a>
+            <a href="homelog?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['home'] ?></a>
+            <a href="choose?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['levels'] ?></a>
+            <a href="profile?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['profile'] ?></a>
+            <a href="top?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['top'] ?></a>
+            <a href="logout?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['logout'] ?> </a>
         </div>
         <span class="menu__button" onclick="openNav()">&#9776; Menu</span>
     </header>
@@ -36,31 +41,25 @@
     <main class="main__for-article">
         <article class="article-content">
             <h3>
-                Our courses
+            <?php echo $lang['ourcourses'] ?>
             </h3>
             <section class="section__choose">
                 <p id='1'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <?php echo $lang['coursesinfo'] ?>
                 </p>
             </section>
-            <section class="section__choose">
-                <p>
-                    !!! Am facut linkarea doar pentru Easy la HTML/CSS cu aceleasi pagini ca am zis sa nu fie prea multe pagini acum ca oricum vor fi la fel, dar ele vor fi adaugate ulterior.
-                </p>
-            </section>
+            
             <br>
             <section class="section__choose">
-                <div class="dropdown">
+            <div class="dropdown">
                     <form action="HTML">
 
-                        <button class="dropdown-button" type="submit"><img src="public/Photos/html.png" class="image-dropdown"> HTML</button>
+                        <a href = "HTML?lang=<?php echo $_SESSION['lang'] ?>" class = "dropdown-button"><img src="public/Photos/html.png" class="image-dropdown"> HTML</a>
                     </form>
                 </div>
                 <div class="dropdown">
                     <form action="CSS">
-                        <button class="dropdown-button" type="submit"><img src="public/Photos/css.png" class="image-dropdown">CSS</button>
+                        <a href = "CSS?lang=<?php echo $_SESSION['lang'] ?>" class = "dropdown-button"><img src="public/Photos/css.png" class="image-dropdown">CSS</a>
                     </form>
                 </div>
             </section>
@@ -70,6 +69,13 @@
             <br>
             <br>
         </article>
+        <article class = "article-content">
+                <div class = "footer_lang">
+                <a href = "choose?lang=en"><?php echo $lang['en'] ?> </a>
+        | <a href = "choose?lang=ro"><?php echo $lang['ro'] ?> </a>
+        | <a href = "choose?lang=fr"><?php echo $lang['fr'] ?> </a>
+                </div>
+            </article>
     </main>
 
     <script src="public/Script/script.js"></script>

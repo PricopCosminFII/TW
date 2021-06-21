@@ -1,15 +1,29 @@
+<?php
+    include 'app/config/lang.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Levels</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="public/Styles/styles.css" />
 </head>
 
 <body class="body__background">
-    <header style="padding-bottom: 10rem;"></header>
+    <header>
+    <nav class="nav__bar">
+            <img src="public/Photos/logoo.png" alt="logo" class="logo">
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="logout"><?php echo $lang['logout'] ?> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main class="main__for-article">
         <article class="article-content">
             <h3>

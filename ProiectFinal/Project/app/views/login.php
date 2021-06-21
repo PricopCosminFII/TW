@@ -1,3 +1,7 @@
+<?php
+    include 'app/config/lang.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,12 +22,12 @@
         <form class="form" method="POST" action="login">
 
             <div class="inputfield">
-                <label>Username</label>
+                <label><?php echo $lang['username1'] ?></label>
                 <input type="text" class="input" name="username">
             </div>
 
             <div class="inputfield">
-                <label>Password</label>
+                <label><?php echo $lang['password'] ?></label>
                 <input type="password" class="input" name="password">
             </div>
             <div class="inputfield">
@@ -34,7 +38,7 @@
     height=50px   >  </a> </p>
             </div>
             <div class="inputfield">
-                <p>If you don't have an account go to <a href="authentication">REGISTER </a>!</p>
+                <p><?php echo $lang['loginmessage'] ?> <a href="authentication">REGISTER </a>!</p>
                 
             </div>
             <div class="inputfield">
@@ -43,8 +47,14 @@
             </div>
            
         </form>
+        
     </div>
-
+    
+    <div>
+        <a href = "login?lang=en"><?php echo $lang['en'] ?> </a>
+        | <a href = "login?lang=ro"><?php echo $lang['ro'] ?> </a>
+        | <a href = "login?lang=fr"><?php echo $lang['fr'] ?> </a>
+    </div>
 </body>
 
 </html>

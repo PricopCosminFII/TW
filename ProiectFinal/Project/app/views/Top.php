@@ -1,3 +1,8 @@
+<?php
+    include 'app/config/lang.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,25 +17,25 @@
 
 <body class="body__background">
     <header>
-        <nav class="nav__bar">
+    <nav class="nav__bar">
             <img src="public/Photos/logoo.png" alt="logo" class="logo">
             <div class="nav-links" id="navLinks">
                 <ul>
-                    <li><a href="homelog">Home</a></li>
-                    <li><a href="choose">Levels</a></li>
-                    <li><a href="profile">Profile</a></li>
-                    <li><a href="top">Leaderboard</a></li>
-                    <li><a href="logout">Log Out</a></li>
+                    <li><a href="homelog?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['home'] ?></a></li>
+                    <li><a href="choose?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['levels'] ?></a></li>
+                    <li><a href="profile?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['profile'] ?></a></li>
+                    <li><a href="top?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['top'] ?></a></li>
+                    <li><a href="logout?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['logout'] ?> </a></li>
                 </ul>
             </div>
         </nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="homelog">Home</a>
-            <a href="choose">Levels</a>
-            <a href="profile">Profile</a>
-            <a href="top">Leaderboard</a>
-            <a href="logut">Log Out</a>
+            <a href="homelog?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['home'] ?></a>
+            <a href="choose?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['levels'] ?></a>
+            <a href="profile?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['profile'] ?></a>
+            <a href="top?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['top'] ?></a>
+            <a href="logout?lang=<?php echo $_SESSION['lang'] ?>"><?php echo $lang['logout'] ?> </a>
         </div>
         <span class="menu__button" onclick="openNav()">&#9776; Menu</span>
     </header>
@@ -49,6 +54,13 @@
         <article class="profile__article-content">
             <div id="container">
 
+            </div>
+        </article>
+        <article class = "article-content">
+            <div class = "footer_lang">
+            <a href = "top?lang=en"><?php echo $lang['en'] ?> </a>
+        | <a href = "top?lang=ro"><?php echo $lang['ro'] ?> </a>
+        | <a href = "top?lang=fr"><?php echo $lang['fr'] ?> </a>
             </div>
         </article>
     </main>

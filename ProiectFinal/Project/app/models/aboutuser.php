@@ -80,8 +80,8 @@ class Aboutuser
         $this->db->query('SELECT * FROM questionsHTML ');
         
         $this->db->execute();
-       $row=$this->db->resultSet();
-       return $row;
+        $row=$this->db->resultSet();
+        return $row;
         
     }
     public function getprogresHTML(){

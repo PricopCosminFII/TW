@@ -2,7 +2,7 @@
     class Database {
         private $dbHost = 'localhost';
         private $dbUser = 'root';
-        private $dbPass = 'yourpassword';
+        private $dbPass = 'Varsator123B';
         private $dbName = 'lehs';
 
         private $statement;

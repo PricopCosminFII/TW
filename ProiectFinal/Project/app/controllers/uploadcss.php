@@ -55,11 +55,11 @@ if (isset($_POST['submit'])) {
 
     $file = fopen($pathCSV, "r");
 
-    $connection = mysqli_connect("localhost", "root", "your password", "lehs") or die("Error " . mysqli_error($connection));
+    $connection = mysqli_connect("localhost", "root", "Varsator123B", "lehs") or die("Error " . mysqli_error($connection));
 
     while($data = fgetcsv($file, $lineLength = 0, $delimiter = ",")) {
         //You should sanitize your inputs first, using a function like addslashes
-        $sql = "insert ignore into questionscss values ('".$data[0]."', '".$data[1]."', '".$data[2]."', '".$data[3]."', '".$data[4]."', '".$data[5]."')";
+        $sql = "insert ignore into questionscss values ('".$data[0]."', '".$data[1]."', '".$data[2]."', '".$data[3]."', '".$data[4]."', '".$data[5]."', '".$data[6]."')";
         $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
      }
   }

@@ -1,3 +1,7 @@
+<?php
+    include 'app/config/lang.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +25,8 @@
             <img src="public/Photos/logoo.png" alt="logo" class="logo">
             <div class="nav-links" id="navLinks">
                 <ul>
-                    <li><a href="login">Login</a></li>
-                    <li><a href="authentication">Authentication</a></li>
+                    <li><a href="login?lang=<?php echo $_SESSION['lang'] ?>">Login</a></li>
+                    <li><a href="authentication?lang=<?php echo $_SESSION['lang'] ?>">Authentication</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,10 +39,12 @@
 
 
         <div class="text-box">
-            <h1> Welcome to learn HTML/CSS </h1>
-            <p>You've Found the Easiest Way to Learn HTML and CSS. Making website is now one of the easiest thing in the world. <br> You just need to learn HTML and CSS and you are good to go.
+            <h1> <?php echo $lang['welcome'] ?> </h1>
+            <p><?php echo $lang['welcome1'] ?> <br> <?php echo $lang['welcome2'] ?>
 
             </p>
+
+           
         </div>
 
     </section>
@@ -46,30 +52,29 @@
     <!----------------------course-------------------->
 
     <section class="course">
-        <h1>This WebSite We Offer</h1>
-        <p>To Learn HTML and CSS very quickly</p>
+        <h1><?php echo $lang['subwelcome'] ?></h1>
+        <p><?php echo $lang['subwelcome1'] ?></p>
 
         <div class="row">
             <div class="course-col">
-                <h3>Easy</h3>
-                <P>Having the knowledge to build your own website with HTML and CSS gives you the chance to stand out from the crowd with an authentic, hand-crafted representation of your business, or any business for that matter. Save money on every site
-                    you may want to build in the future, and build better websites with HTML and CSS.</P>
+                <h3><?php echo $lang['easy'] ?></h3>
+                <P><?php echo $lang['info'] ?></P>
             </div>
             <div class="course-col">
-                <h3>Intermediate</h3>
-                <P>Having the knowledge to build your own website with HTML and CSS gives you the chance to stand out from the crowd with an authentic, hand-crafted representation of your business, or any business for that matter. Save money on every site
-                    you may want to build in the future, and build better websites with HTML and CSS.</P>
+                <h3><?php echo $lang['intermediate'] ?></h3>
+                <P><?php echo $lang['info'] ?></P>
             </div>
             <div class="course-col">
-                <h3>Hard</h3>
-                <P>Having the knowledge to build your own website with HTML and CSS gives you the chance to stand out from the crowd with an authentic, hand-crafted representation of your business, or any business for that matter. Save money on every site
-                    you may want to build in the future, and build better websites with HTML and CSS.</P>
+                <h3>Ha<?php echo $lang['hard'] ?>rd</h3>
+                <P><?php echo $lang['info'] ?></P>
             </div>
         </div>
-
-
+        <div>
+        <a href = "logout?lang=en"><?php echo $lang['en'] ?> </a>
+        | <a href = "logout?lang=ro"><?php echo $lang['ro'] ?> </a>
+        | <a href = "logout?lang=fr"><?php echo $lang['fr'] ?> </a>
+        </div>
     </section>
-
 
     <script src="public/JS/script.js"></script>
 

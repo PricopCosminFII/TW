@@ -1,3 +1,7 @@
+<?php
+    include 'app/config/lang.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,33 +21,33 @@
 
         <form class="form" method="POST" action="authentication">
             <div class="inputfield">
-                <label>Username</label>
+                <label><?php echo $lang['username1'] ?></label>
                 <input type="text" class="input" name="username">
             </div>
             <div class="inputfield">
-                <label>Email Address</label>
+                <label><?php echo $lang['email'] ?></label>
                 <input type="text" class="input" name="email">
             </div>
             <div class="inputfield">
-                <label>First Name</label>
+                <label><?php echo $lang['firstname'] ?></label>
                 <input type="text" class="input" name="firstname">
             </div>
             <div class="inputfield">
-                <label>Last Name</label>
+                <label><?php echo $lang['lastname'] ?></label>
                 <input type="text" class="input" name="lastname">
             </div>
             <div class="inputfield">
-                <label>Password</label>
+                <label><?php echo $lang['password'] ?></label>
                 <input type="password" class="input" name="password">
             </div>
            
             <div class="inputfield">
-                <label>Gender</label>
+                <label><?php echo $lang['gender'] ?></label>
                 <div class="custom_select">
                     <select name="gender">
-              <option value="Unknown">Unknown</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
+              <option value="Unknown"><?php echo $lang['Unknown'] ?></option>
+              <option value="Male"><?php echo $lang['Male'] ?></option>
+              <option value="Female"><?php echo $lang['Female'] ?></option>
             </select>
                 </div>
            
@@ -66,7 +70,11 @@
           
         </form>
     </div>
-
+    <div>
+        <a href = "authentication?lang=en"><?php echo $lang['en'] ?> </a>
+        | <a href = "authentication?lang=ro"><?php echo $lang['ro'] ?> </a>
+        | <a href = "authentication?lang=fr"><?php echo $lang['fr'] ?> </a>
+    </div>
 </body>
 
 </html>

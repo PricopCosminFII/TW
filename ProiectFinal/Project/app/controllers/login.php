@@ -39,7 +39,8 @@ class Login extends Controller
         $_SESSION['firstname'] = $user->firstname;
         $_SESSION['lastname'] = $user->lastname;
         $_SESSION['image']='public/Photos/white.png';
-
+        setcookie('session',$user->username, time() + 3600, 'http://localhost:3000/Project');
+        $_COOKIE['session'] = $user->username;
 
     }
 

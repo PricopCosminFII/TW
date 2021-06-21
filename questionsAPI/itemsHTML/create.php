@@ -8,6 +8,8 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 include_once '../config/Database.php';
 include_once '../class/Items.php';
 
+if(strcasecmp($_SERVER["REQUEST_METHOD"],'POST') == 0) {
+
 $database = new Database();
 $db = $database->getConnection();
 
@@ -16,15 +18,16 @@ $items = new Items($db, 'questionshtml');
 $data = json_decode(file_get_contents("php://input"));
 
 if (
-    !empty($data->lecture) && !empty($data->question) && !empty($data->option1) && !empty($data->option2) && !empty($data->option3) &&
+    !empty($data->id) && !empty($data->lecture) && !empty($data->question) && !empty($data->option1) && !empty($data->option2) && !empty($data->option3) &&
     !empty($data->answear)
 ) {
 
+    $items->id = $data->id;
     $items->lecture = $data->lecture;
     $items->question = $data->question;
-    $items->question = $data->option1;
-    $items->question = $data->option2;
-    $items->question = $data->option3;
+    $items->option1 = $data->option1;
+    $items->option2 = $data->option2;
+    $items->option3 = $data->option3;
     $items->answear = $data->answear;
 
 
@@ -38,4 +41,12 @@ if (
 } else {
     http_response_code(400);
     echo json_encode(array("message" => "Unable to create item. Data is incomplete."));
+}
+
+}
+else {
+    http_response_code(405);
+    echo json_encode(
+        array('message' => 'Wrong method')
+      );
 }
